@@ -1,0 +1,4 @@
+a = 64
+square_root = a ** 0.5
+print("The squareroot of the number is :",square_root)
+
