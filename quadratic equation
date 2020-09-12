@@ -1,0 +1,8 @@
+a = 4
+b = 6
+c = 8
+d = (b ** 2)-(4*a*c)
+first_solution = (-b + (d ** 0.5))/(2*a)
+second_solution = (-b - (d ** 0.5))/(2*a)
+print("The solution for the quadratic equation are",first_solution , "and ",second_solution)
+
