@@ -1,0 +1,10 @@
+x = int(input("Enter first number:"))
+y = int(input("Enter second number:"))
+
+def calculate_hcf(a, b):
+   while(b):
+       a, b = a, a % b
+   return a
+
+hcf = calculate_hcf(x,y)
+print("The HCF is", hcf)
