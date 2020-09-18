@@ -1,0 +1,13 @@
+x = int(input("Enter lower range:"))  
+z = int(input("Enter upper range:"))  
+
+y = 1
+sum = x
+count = 1
+print("Fibonacci Series: ", end = " ")
+while(count < z-1):
+  print(sum, end = " ")
+  count += 1
+  x = y
+  y = sum
+  sum = x + y
