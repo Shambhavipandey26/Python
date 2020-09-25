@@ -1,0 +1,6 @@
+with open("file1.txt",'w') as f:
+    f.write("Name:Shambhavi\n")
+    f.write("Age:20\n")
+    f.write("Class:12\n")
+    f.write("Month:feb\n")
+    f.write("Year:2017\n")
