@@ -1,0 +1,7 @@
+set={"A","B","C","D"}
+print(set)
+print("After removing an element present in a set")
+set.remove("A")
+print(set)
+print("Removing an element not present in a set will give a key error")
+set.remove("z")
