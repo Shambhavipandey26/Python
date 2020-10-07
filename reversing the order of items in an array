@@ -1,0 +1,13 @@
+import array
+
+arr = array.array('i', [1, 2, 3, 4, 5, 6])
+print("array")
+print()
+for i in range(len(arr)):
+    print(arr[i],end="")
+
+arr.reverse()
+print()
+print("After reversing the order of items in an array:")
+for i in range(len(arr)):
+    print(arr[i],end="")
