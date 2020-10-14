@@ -1,0 +1,10 @@
+import array
+
+arr = array.array('i', [1, 2, 3, 4, 5, 6])
+for i in range(0,6):
+    print(arr[i],end=" ")
+print()
+a=eval(input("Enter the index you want to delete:"))
+arr.pop(a)
+for i in range(len(arr)):
+    print(arr[i],end="")
