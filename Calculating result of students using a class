@@ -1,0 +1,20 @@
+class calper:
+    def __init__(self,m1=0,m2=0,m3=0,m4=0,m5=0):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+        self.m4=m4
+        self.m5=m5
+
+    def percentage(self):
+        sum=self.m1+self.m2+self.m3+self.m4+self.m5
+        return ((sum/500)*100)
+
+a=int(input("Enter marks 1"))
+b=int(input("Enter marks 2"))
+c=int(input("Enter marks 3"))
+d=int(input("Enter marks 4"))
+e=int(input("Enter marks 5"))
+s1=calper(a,b,c,d,e)
+y=s1.percentage()
+print(y)
