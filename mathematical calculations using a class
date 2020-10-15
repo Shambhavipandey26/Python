@@ -1,0 +1,39 @@
+class calculator:
+
+    def add(self):
+        print("Enter 2 numbers")
+        num1=int(input("Number 1"))
+        num2=int(input("Number 2"))
+        return (num1+num2)
+    def sub(self):
+        print("Enter 2 numbers")
+        num1=int(input("Number 1"))
+        num2=int(input("Number 2"))
+        return (num1-num2)
+    def mul(self):
+        print("Enter 2 numbers")
+        num1=int(input("Number 1"))
+        num2=int(input("Number 2"))
+        return (num1*num2)
+    def div(self):
+        print("Enter 2 numbers")
+        num1=int(input("Number 1"))
+        num2=int(input("Number 2"))
+        return (num1/num2)
+
+print("Enter 1 for addition")
+print("Enter 2 for subtraction")
+print("Enter 3 for multiplication")
+print("Enter 4 for division")
+c=int(input("Enter your choice"))
+p1=calculator()
+if c==1:
+   y= p1.add()
+elif c==2:
+    y=p1.sub()
+elif c==3:
+    y=p1.mul()
+else:
+    y=p1.div()
+
+print(y)
