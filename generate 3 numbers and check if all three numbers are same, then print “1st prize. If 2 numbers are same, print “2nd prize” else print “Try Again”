@@ -1,0 +1,11 @@
+import random
+a=(random.randint(0,9))
+b=(random.randint(0,9))
+c=(random.randint(0,9))
+print('The numbers are',a,b,c)
+if(a==b==c):
+    print('1st prize')
+elif(a==b or b==c or c==a):
+    print('2nd prize')
+else:
+    print('Try Again!')
