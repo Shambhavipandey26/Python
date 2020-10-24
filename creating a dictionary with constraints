@@ -1,0 +1,21 @@
+dictionary={}
+x=int(input("Enter the number of elements you wish to enter-"))
+for i in range(0,x):
+    key=input("Enter the string:")
+    value=input("Enter the value:")
+    if key.isdigit() :
+        print("key vaue is not string")
+    else :
+        if (len(key)<=6):
+            if value.isdigit() :
+                value=int(value)
+                if value%2==0 :
+                  dictionary[key]=value
+                else :
+                  print ("value is not even")
+            else :
+                print ("value is not a number")
+        else :
+            
+            print("key is more than 6")
+print(dictionary)
