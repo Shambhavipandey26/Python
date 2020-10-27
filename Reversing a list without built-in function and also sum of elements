@@ -1,0 +1,10 @@
+list1=[1,2,3,4,5,6,]
+print ("List is:",list1)
+print ("List after reversing elements:")
+for i in range(5,-1,-1):
+    print (list1[i])
+sum=0
+for i in list1 :
+    sum=sum+i
+print("sum of elements of a list:",sum)
+
