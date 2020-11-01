@@ -1,0 +1,25 @@
+TotalAmount = int(input('Total Amount: '))
+amount = int(input('Amount to be withdrawn or deposited: '))
+accountNo = input("Enter account no.: ")
+
+option = int(input('press 1 for withdrawal \npress 2 for deposit: '))
+
+def withdrawal(TotalAmount, amount):
+    with open('bankdetails.txt'.format(accountNo), 'w+') as f:
+        f.write(str(TotalAmount))
+        amount = TotalAmount - amount
+        f.write(str(amount))
+        print("Amount left after withdrawal", amount)
+
+def deposit(TotalAmount, amount):
+    with open('{}.txt'.format(accountNo), 'w+') as f:
+        f.write(str(TotalAmount))
+        amount = TotalAmount + amount
+        f.write(str(amount))
+        print("Amount after deposit", amount)
+
+if option == 1:
+    withdrawal(TotalAmount, amount)
+
+elif option == 2:
+    deposit(TotalAmount, amount)
