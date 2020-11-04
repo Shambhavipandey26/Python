@@ -1,0 +1,9 @@
+x=0
+f=open("count.txt",'a+')
+f.write("a\n")
+f.seek(0)
+for i in f:
+    if 'a' in i:
+     x+=1
+     print(x)
+f.close()
