@@ -1,0 +1,5 @@
+with open('used for counting occurences of a word.txt','r') as f:
+   word=input("Enter the Word you want to count: ")
+   no_of_occurences=f.read()
+   print(no_of_occurences.count(word))
+
