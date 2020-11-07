@@ -1,0 +1,10 @@
+f=open("file.txt","w+")
+name = input("Enter your Name: ")
+address = input("Enter your address: ")
+contact_info = input("Enter your contact information: ")
+
+f.write("Name:{0}\nAddress: {1}\nContact Info:{2}\n".format(name,address,contact_info))
+
+f=open("file.txt","w+")
+print(f.read())
+f.close()
