@@ -1,0 +1,15 @@
+name = input('Enter your name: ')
+roll_Number = int(input('Enter your Roll number: '))
+
+subject1 = input('Enter the name of subject 1: ')
+subject1_marks = int(input('Enter marks: '))
+
+subject2 = input('Enter the name of subject 2: ')
+subject2_marks = int(input('Enter marks: '))
+
+subject3 = input('Enter the name of subject 3: ')
+subject3_marks = int(input('Enter marks: '))
+
+dict = {'name': name, 'roll_Number': roll_Number, 'Subject': {subject1: subject1_marks, subject2: subject2_marks, subject3: subject3_marks}}
+
+print(dict)
