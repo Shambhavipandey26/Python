@@ -1,0 +1,19 @@
+import tkinter as tk  
+from functools import partial  
+def openfile(label_result,n1):
+    enrollment_num=(n1.get())
+    f = open(enrollment_num+'.txt',"r")
+    data = f.read()
+    label_result.config(text="Data = %s" % data)
+    return
+
+root=tk.Tk()
+root.geometry('500x300')
+root.title('Student Information')
+enrollment_number=tk.StringVar()
+labelResult=tk.Label(root)
+labelResult.place(x=50,y=100)
+enternum=tk.Entry(root,textvariable=enrollment_number).place(x=50,y=50)
+openfile=partial(openfile,labelResult,enrollment_number)
+button=tk.Button(root,text="Open Details",command=openfile).place(x=200,y=50)
+root.mainloop()
