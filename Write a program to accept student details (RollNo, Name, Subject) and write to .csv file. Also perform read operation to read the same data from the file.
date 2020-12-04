@@ -1,0 +1,20 @@
+import csv
+details=['RollNo','Name','Subject']
+Roll_No=int(input("Enter the roll no:"))
+Name=input("Enter the name:")
+Subject=input("Enter the subject:")
+list1=[]
+list1.insert(1,Roll_No)
+list1.insert(2,Name)
+list1.insert(3,Subject)
+
+filename="students_info.csv"
+with open(filename, 'w') as fp:
+    writer=csv.writer(fp)
+    writer.writerow(details)
+    writer.writerow(list1)
+
+with open ('students_info.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
