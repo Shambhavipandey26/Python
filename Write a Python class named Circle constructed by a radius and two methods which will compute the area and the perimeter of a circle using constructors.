@@ -1,0 +1,11 @@
+class Circle():
+   def __init__(self, r):
+     self.radius = r
+   def area(self):
+     return self.radius**2*3.14
+   def perimeter(self):
+     return 2*self.radius*3.14
+obj=Circle(eval(input("Enter the radius: ")))
+print("Area= {}".format(obj.area()))
+print("Perimeter= {}".format(obj.perimeter()))
+
